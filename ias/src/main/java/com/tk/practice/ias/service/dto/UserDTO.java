@@ -1,4 +1,4 @@
-package com.tk.practice.ias.controller.kafka.dto;
+package com.tk.practice.ias.service.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

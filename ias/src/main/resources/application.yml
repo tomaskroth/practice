@@ -1,1 +1,12 @@
-
+server:
+  port: 8888
+spring:
+  kafka:
+    listener:
+      missing-topics-fatal: false
+    consumer:
+      bootstrap-servers: 192.168.1.80:9092
+      group-id: user-approval
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: com.tk.practice.ias.controller.kafka.serializer.UserDTODeserializer
